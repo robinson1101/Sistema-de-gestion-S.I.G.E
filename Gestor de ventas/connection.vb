@@ -27,7 +27,7 @@ Public Class connection
 
 
         Try
-            AbrirConexion()
+            ' AbrirConexion()
             Dim ElDataTable As New DataTable()
 
             Dim cmd As New MySqlCommand("Select NombreUsuario as 'NOMBRE DE USUARIO' ,Usuario as 'USUARIO',TipoUsuario as 'TIPO DE USUARIO',
@@ -53,7 +53,7 @@ Contraseña,codigoRecuperacion as 'CODIGO DE RECUPERACION', Fecha as 'FECHA DE C
 
 
         Try
-            AbrirConexion()
+            ' AbrirConexion()
             Dim DataGrid As New DataTable()
 
             'Select idDestinatario as 'No' ,oficinaDestinatario as 'OFICINA',

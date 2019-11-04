@@ -23,10 +23,11 @@ Partial Class InventarioGeneral
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -41,15 +42,6 @@ Partial Class InventarioGeneral
         Me.txtCorreoEl = New System.Windows.Forms.TextBox()
         Me.txtDirectorAdmin = New System.Windows.Forms.TextBox()
         Me.DataGridViewIG = New System.Windows.Forms.DataGridView()
-        Me.articulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.marcaArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.serialM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.serialArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.estadoArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ValorPromedio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Observaciones = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ComboBoxIG = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.btnEliminar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ToolTipInvGeneral = New System.Windows.Forms.ToolTip(Me.components)
@@ -71,6 +63,17 @@ Partial Class InventarioGeneral
         Me.TextBoxNumFac2 = New System.Windows.Forms.TextBox()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.LabelV = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.articulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.marcaArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.serialE = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.serialArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.estadoArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ValorPromedio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Observaciones = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ComboBoxIG = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.btnEliminar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.GroupBoxRegistro.SuspendLayout()
         CType(Me.DataGridViewIG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxFactura2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -128,6 +131,7 @@ Partial Class InventarioGeneral
         'GroupBoxRegistro
         '
         Me.GroupBoxRegistro.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBoxRegistro.Controls.Add(Me.Label3)
         Me.GroupBoxRegistro.Controls.Add(Me.ComboBoxOficina)
         Me.GroupBoxRegistro.Controls.Add(Me.TextBoxDireccion)
         Me.GroupBoxRegistro.Controls.Add(Me.Label1)
@@ -147,7 +151,6 @@ Partial Class InventarioGeneral
         Me.GroupBoxRegistro.Size = New System.Drawing.Size(409, 236)
         Me.GroupBoxRegistro.TabIndex = 14
         Me.GroupBoxRegistro.TabStop = False
-        Me.GroupBoxRegistro.Text = "DATOS REGISTRO"
         '
         'ComboBoxOficina
         '
@@ -220,100 +223,39 @@ Partial Class InventarioGeneral
         '
         'DataGridViewIG
         '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DataGridViewIG.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewIG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.DataGridViewIG.BackgroundColor = System.Drawing.Color.White
         Me.DataGridViewIG.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewIG.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewIG.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewIG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewIG.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.articulo, Me.marcaArticulo, Me.serialM, Me.serialArticulo, Me.estadoArticulo, Me.ValorPromedio, Me.Observaciones, Me.ComboBoxIG, Me.btnEliminar})
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ActiveCaption
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewIG.DefaultCellStyle = DataGridViewCellStyle7
+        Me.DataGridViewIG.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.articulo, Me.marcaArticulo, Me.serialE, Me.serialArticulo, Me.estadoArticulo, Me.ValorPromedio, Me.Observaciones, Me.ComboBoxIG, Me.btnEliminar})
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewIG.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewIG.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
         Me.DataGridViewIG.GridColor = System.Drawing.Color.White
         Me.DataGridViewIG.Location = New System.Drawing.Point(5, 248)
         Me.DataGridViewIG.Name = "DataGridViewIG"
         Me.DataGridViewIG.RowHeadersVisible = False
-        Me.DataGridViewIG.Size = New System.Drawing.Size(959, 409)
+        Me.DataGridViewIG.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Empty
+        Me.DataGridViewIG.RowTemplate.Height = 27
+        Me.DataGridViewIG.Size = New System.Drawing.Size(969, 434)
         Me.DataGridViewIG.StandardTab = True
         Me.DataGridViewIG.TabIndex = 12
-        '
-        'articulo
-        '
-        Me.articulo.HeaderText = "ARTICULO"
-        Me.articulo.Name = "articulo"
-        Me.articulo.Width = 90
-        '
-        'marcaArticulo
-        '
-        Me.marcaArticulo.HeaderText = "MARCA ARTICULO"
-        Me.marcaArticulo.Name = "marcaArticulo"
-        Me.marcaArticulo.Width = 123
-        '
-        'serialM
-        '
-        Me.serialM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.serialM.HeaderText = "SERIAL MOVILCO"
-        Me.serialM.Name = "serialM"
-        Me.serialM.ToolTipText = "Ingrese el serial"
-        Me.serialM.Width = 60
-        '
-        'serialArticulo
-        '
-        Me.serialArticulo.HeaderText = "SERIAL ARTICULO"
-        Me.serialArticulo.Name = "serialArticulo"
-        Me.serialArticulo.Width = 123
-        '
-        'estadoArticulo
-        '
-        Me.estadoArticulo.HeaderText = "CONDICION ARTICULO"
-        Me.estadoArticulo.Name = "estadoArticulo"
-        Me.estadoArticulo.Width = 143
-        '
-        'ValorPromedio
-        '
-        DataGridViewCellStyle6.Format = "N2"
-        DataGridViewCellStyle6.NullValue = Nothing
-        Me.ValorPromedio.DefaultCellStyle = DataGridViewCellStyle6
-        Me.ValorPromedio.HeaderText = "VALOR PROMEDIO"
-        Me.ValorPromedio.Name = "ValorPromedio"
-        Me.ValorPromedio.Width = 124
-        '
-        'Observaciones
-        '
-        Me.Observaciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        Me.Observaciones.HeaderText = "OBSERVACIONES"
-        Me.Observaciones.Name = "Observaciones"
-        Me.Observaciones.Width = 130
-        '
-        'ComboBoxIG
-        '
-        Me.ComboBoxIG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.ComboBoxIG.HeaderText = "ESTADO"
-        Me.ComboBoxIG.Items.AddRange(New Object() {"EN USO", "DISPONIBLE", "DADO DE BAJA"})
-        Me.ComboBoxIG.Name = "ComboBoxIG"
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.btnEliminar.HeaderText = ""
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.btnEliminar.Text = "Borrar"
-        Me.btnEliminar.UseColumnTextForButtonValue = True
-        Me.btnEliminar.Width = 60
         '
         'Button1
         '
@@ -323,9 +265,9 @@ Partial Class InventarioGeneral
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1077, 609)
+        Me.Button1.Location = New System.Drawing.Point(1077, 634)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(89, 48)
+        Me.Button1.Size = New System.Drawing.Size(97, 48)
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "B&ORRAR DATOS"
         Me.ToolTipInvGeneral.SetToolTip(Me.Button1, "Borrar datos")
@@ -339,9 +281,9 @@ Partial Class InventarioGeneral
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(970, 609)
+        Me.Button2.Location = New System.Drawing.Point(980, 634)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(101, 48)
+        Me.Button2.Size = New System.Drawing.Size(91, 48)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "GU&ARDAR DATOS"
         Me.ToolTipInvGeneral.SetToolTip(Me.Button2, "Guardar datos")
@@ -364,9 +306,9 @@ Partial Class InventarioGeneral
         Me.ButtonImp2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ButtonImp2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red
         Me.ButtonImp2.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.ButtonImp2.Location = New System.Drawing.Point(970, 248)
+        Me.ButtonImp2.Location = New System.Drawing.Point(980, 248)
         Me.ButtonImp2.Name = "ButtonImp2"
-        Me.ButtonImp2.Size = New System.Drawing.Size(101, 48)
+        Me.ButtonImp2.Size = New System.Drawing.Size(91, 48)
         Me.ButtonImp2.TabIndex = 13
         Me.ButtonImp2.Text = "IMPORTAR FACTURA"
         Me.ToolTipInvGeneral.SetToolTip(Me.ButtonImp2, "Importar remision")
@@ -375,9 +317,9 @@ Partial Class InventarioGeneral
         'PictureBoxFactura2
         '
         Me.PictureBoxFactura2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBoxFactura2.Location = New System.Drawing.Point(970, 302)
+        Me.PictureBoxFactura2.Location = New System.Drawing.Point(980, 302)
         Me.PictureBoxFactura2.Name = "PictureBoxFactura2"
-        Me.PictureBoxFactura2.Size = New System.Drawing.Size(204, 301)
+        Me.PictureBoxFactura2.Size = New System.Drawing.Size(194, 316)
         Me.PictureBoxFactura2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBoxFactura2.TabIndex = 116
         Me.PictureBoxFactura2.TabStop = False
@@ -385,6 +327,7 @@ Partial Class InventarioGeneral
         'GroupBoxDetalles
         '
         Me.GroupBoxDetalles.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBoxDetalles.Controls.Add(Me.Label2)
         Me.GroupBoxDetalles.Controls.Add(Me.dataGridViewCencepto2)
         Me.GroupBoxDetalles.Controls.Add(Me.labelValor2)
         Me.GroupBoxDetalles.Controls.Add(Me.DateTimePickerFC2)
@@ -399,12 +342,11 @@ Partial Class InventarioGeneral
         Me.GroupBoxDetalles.Controls.Add(Me.LabelV)
         Me.GroupBoxDetalles.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxDetalles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GroupBoxDetalles.Location = New System.Drawing.Point(680, 6)
+        Me.GroupBoxDetalles.Location = New System.Drawing.Point(676, 6)
         Me.GroupBoxDetalles.Name = "GroupBoxDetalles"
         Me.GroupBoxDetalles.Size = New System.Drawing.Size(494, 240)
         Me.GroupBoxDetalles.TabIndex = 119
         Me.GroupBoxDetalles.TabStop = False
-        Me.GroupBoxDetalles.Text = "DETALLES FACTURAS"
         '
         'dataGridViewCencepto2
         '
@@ -416,7 +358,7 @@ Partial Class InventarioGeneral
         Me.dataGridViewCencepto2.Location = New System.Drawing.Point(9, 103)
         Me.dataGridViewCencepto2.Name = "dataGridViewCencepto2"
         Me.dataGridViewCencepto2.RowHeadersVisible = False
-        Me.dataGridViewCencepto2.Size = New System.Drawing.Size(470, 127)
+        Me.dataGridViewCencepto2.Size = New System.Drawing.Size(489, 127)
         Me.dataGridViewCencepto2.TabIndex = 10
         '
         'Column1
@@ -427,9 +369,9 @@ Partial Class InventarioGeneral
         '
         'Column2
         '
-        DataGridViewCellStyle8.Format = "N2"
-        DataGridViewCellStyle8.NullValue = "0"
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle5.Format = "N2"
+        DataGridViewCellStyle5.NullValue = "0"
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle5
         Me.Column2.HeaderText = "VALOR UNITARIO"
         Me.Column2.Name = "Column2"
         Me.Column2.Width = 125
@@ -452,7 +394,7 @@ Partial Class InventarioGeneral
         '
         Me.DateTimePickerFC2.Location = New System.Drawing.Point(279, 33)
         Me.DateTimePickerFC2.Name = "DateTimePickerFC2"
-        Me.DateTimePickerFC2.Size = New System.Drawing.Size(198, 20)
+        Me.DateTimePickerFC2.Size = New System.Drawing.Size(219, 20)
         Me.DateTimePickerFC2.TabIndex = 9
         '
         'Label54
@@ -533,13 +475,101 @@ Partial Class InventarioGeneral
         Me.LabelV.TabIndex = 4
         Me.LabelV.Text = "Valor total"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(191, -2)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(195, 16)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "DETALLES DE FACTURAS"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Red
+        Me.Label3.Location = New System.Drawing.Point(135, 1)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(183, 16)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "REGISTRO DE INGRESO"
+        '
+        'articulo
+        '
+        Me.articulo.HeaderText = "ARTICULO"
+        Me.articulo.Name = "articulo"
+        Me.articulo.Width = 90
+        '
+        'marcaArticulo
+        '
+        Me.marcaArticulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.marcaArticulo.HeaderText = "MARCA ARTICULO"
+        Me.marcaArticulo.Name = "marcaArticulo"
+        Me.marcaArticulo.Width = 110
+        '
+        'serialE
+        '
+        Me.serialE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.serialE.HeaderText = "SERIAL EMPRESA"
+        Me.serialE.Name = "serialE"
+        Me.serialE.ToolTipText = "Ingrese el serial"
+        '
+        'serialArticulo
+        '
+        Me.serialArticulo.HeaderText = "SERIAL ARTICULO"
+        Me.serialArticulo.Name = "serialArticulo"
+        Me.serialArticulo.Width = 123
+        '
+        'estadoArticulo
+        '
+        Me.estadoArticulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.estadoArticulo.HeaderText = "CONDICION ARTICULO"
+        Me.estadoArticulo.Name = "estadoArticulo"
+        Me.estadoArticulo.Width = 110
+        '
+        'ValorPromedio
+        '
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.ValorPromedio.DefaultCellStyle = DataGridViewCellStyle3
+        Me.ValorPromedio.HeaderText = "VALOR PROMEDIO"
+        Me.ValorPromedio.Name = "ValorPromedio"
+        Me.ValorPromedio.Width = 124
+        '
+        'Observaciones
+        '
+        Me.Observaciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        Me.Observaciones.HeaderText = "OBSERVACIONES"
+        Me.Observaciones.Name = "Observaciones"
+        Me.Observaciones.Width = 130
+        '
+        'ComboBoxIG
+        '
+        Me.ComboBoxIG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.ComboBoxIG.HeaderText = "ESTADO"
+        Me.ComboBoxIG.Items.AddRange(New Object() {"EN USO", "DISPONIBLE", "DADO DE BAJA"})
+        Me.ComboBoxIG.Name = "ComboBoxIG"
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.btnEliminar.HeaderText = ""
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.btnEliminar.Text = "Borrar"
+        Me.btnEliminar.UseColumnTextForButtonValue = True
+        Me.btnEliminar.Width = 60
+        '
         'InventarioGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Gainsboro
-        Me.ClientSize = New System.Drawing.Size(1178, 661)
+        Me.ClientSize = New System.Drawing.Size(1178, 683)
         Me.Controls.Add(Me.GroupBoxDetalles)
         Me.Controls.Add(Me.ButtonImprimirF2)
         Me.Controls.Add(Me.ButtonImp2)
@@ -574,15 +604,6 @@ Partial Class InventarioGeneral
     Friend WithEvents Button2 As Button
     Friend WithEvents ToolTipInvGeneral As ToolTip
     Friend WithEvents DateTimePickerIG As DateTimePicker
-    Friend WithEvents articulo As DataGridViewTextBoxColumn
-    Friend WithEvents marcaArticulo As DataGridViewTextBoxColumn
-    Friend WithEvents serialM As DataGridViewTextBoxColumn
-    Friend WithEvents serialArticulo As DataGridViewTextBoxColumn
-    Friend WithEvents estadoArticulo As DataGridViewTextBoxColumn
-    Friend WithEvents ValorPromedio As DataGridViewTextBoxColumn
-    Friend WithEvents Observaciones As DataGridViewTextBoxColumn
-    Friend WithEvents ComboBoxIG As DataGridViewComboBoxColumn
-    Friend WithEvents btnEliminar As DataGridViewButtonColumn
     Friend WithEvents TextBoxDireccion As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBoxOficina As ComboBox
@@ -604,4 +625,15 @@ Partial Class InventarioGeneral
     Friend WithEvents Label56 As Label
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents articulo As DataGridViewTextBoxColumn
+    Friend WithEvents marcaArticulo As DataGridViewTextBoxColumn
+    Friend WithEvents serialE As DataGridViewTextBoxColumn
+    Friend WithEvents serialArticulo As DataGridViewTextBoxColumn
+    Friend WithEvents estadoArticulo As DataGridViewTextBoxColumn
+    Friend WithEvents ValorPromedio As DataGridViewTextBoxColumn
+    Friend WithEvents Observaciones As DataGridViewTextBoxColumn
+    Friend WithEvents ComboBoxIG As DataGridViewComboBoxColumn
+    Friend WithEvents btnEliminar As DataGridViewButtonColumn
 End Class

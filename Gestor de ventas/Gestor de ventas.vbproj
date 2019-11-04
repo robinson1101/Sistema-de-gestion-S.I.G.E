@@ -112,6 +112,12 @@
     <Compile Include="Kits.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Planes + Equipos.Designer.vb">
       <DependentUpon>Planes + Equipos.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kits.resx">
       <DependentUpon>Kits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Planes + Equipos.resx">
       <DependentUpon>Planes + Equipos.vb</DependentUpon>
