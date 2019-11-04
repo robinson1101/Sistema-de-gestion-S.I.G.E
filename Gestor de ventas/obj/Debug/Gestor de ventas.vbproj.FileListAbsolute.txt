@@ -1,0 +1,29 @@
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Gestor de ventas.exe.config
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Gestor de ventas.exe
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Gestor de ventas.pdb
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Gestor de ventas.xml
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.vbprojAssemblyReference.cache
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Resources.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.vbproj.GenerateResource.cache
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.exe
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.xml
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.pdb
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Principal.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Planes.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Kits.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Planes___Equipos.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Proporcionados.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Reposiciones.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Television.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Triple_play.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Comisiones.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.Ventas.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor_de_ventas.InventarioGeneral.resources
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Google.Protobuf.dll
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\MySql.Data.dll
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Renci.SshNet.dll
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Google.Protobuf.xml
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\MySql.Data.xml
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\bin\Debug\Renci.SshNet.xml
+C:\Users\ROBINSON\source\repos\Gestor de ventas\Gestor de ventas\obj\Debug\Gestor de ventas.vbproj.CopyComplete
