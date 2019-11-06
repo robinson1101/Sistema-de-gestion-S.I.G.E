@@ -37,7 +37,8 @@ Public Class Principal
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        'metodo para iniciar el form principal MAXIMIZADO
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 
     Private Sub btn_Planes_Click(sender As Object, e As EventArgs) Handles btn_Planes.Click

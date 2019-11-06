@@ -22,17 +22,30 @@ Partial Class Planes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 796)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1093, 10)
+        Me.Panel1.TabIndex = 1
         '
         'Planes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1069, 586)
+        Me.ClientSize = New System.Drawing.Size(1093, 806)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "Planes"
         Me.Text = "Planes"
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents Panel1 As Panel
 End Class

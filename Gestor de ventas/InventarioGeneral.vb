@@ -37,7 +37,7 @@ Public Class InventarioGeneral
         Return (cadenaArticulo)
     End Function
     Public contador As Integer = 0
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
 
         'codigo para validar que el datagrid no guarde campos vacios
         Dim numLineas As Integer = DataGridViewIG.RowCount - 2
@@ -173,7 +173,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
                             agregar.Parameters.Clear()
 
                             agregar.Parameters.Add("?serialMovilco", MySqlDbType.VarChar).Value = Convert.ToString(fila.Cells("serialM").Value)
-                            agregar.Parameters.Add("?NoFactura", MySqlDbType.VarChar).Value = TextBoxNumFac2.Text 
+                            agregar.Parameters.Add("?NoFactura", MySqlDbType.VarChar).Value = TextBoxNumFac2.Text
                             agregar.Parameters.Add("?articuloA", MySqlDbType.VarChar).Value = Convert.ToString(fila.Cells("articulo").Value).ToUpper
                             agregar.Parameters.Add("?marcaArticuloA", MySqlDbType.VarChar).Value = Convert.ToString(fila.Cells("marcaArticulo").Value).ToUpper
                             agregar.Parameters.Add("?serialArticuloA", MySqlDbType.VarChar).Value = Convert.ToString(fila.Cells("serialArticulo").Value)
@@ -232,7 +232,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
 
 
 
-    Private Sub DataGridViewIG_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewIG.CellContentClick
+    Private Sub DataGridViewIG_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         'BLOQUE UTILIZADO PARA ELIMINAR FILA AL DAR CLICK EN EL BOTON ELIMINAR ALOJADO EN EL DATAGRIDVIEWIG.
         For n As Integer = DataGridViewIG.Rows.Count - 1 To 0 Step -1
 
@@ -301,7 +301,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
 
     End Sub
 
-    Private Sub AnalistaV_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTelefono.KeyPress
+    Private Sub AnalistaV_KeyPress(sender As Object, e As KeyPressEventArgs)
         If txtTelefono.Text = "" Then
             If e.KeyChar = ChrW(Keys.Space) Then
                 e.Handled = True
@@ -312,7 +312,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
         End If
     End Sub
 
-    Private Sub TxtDirectorAdmin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDirectorAdmin.KeyPress
+    Private Sub TxtDirectorAdmin_KeyPress(sender As Object, e As KeyPressEventArgs)
         If txtDirectorAdmin.Text = "" Then
             If e.KeyChar = ChrW(Keys.Space) Then
                 e.Handled = True
@@ -323,7 +323,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
         End If
     End Sub
 
-    Private Sub TxtCorreoEl_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCorreoEl.KeyPress
+    Private Sub TxtCorreoEl_KeyPress(sender As Object, e As KeyPressEventArgs)
         If txtCorreoEl.Text = "" Then
             If e.KeyChar = ChrW(Keys.Space) Then
                 e.Handled = True
@@ -345,7 +345,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
         'DateTimePickerIG.Text = ""
         ComboBoxOficina.Text = ""
@@ -358,7 +358,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
 
     End Sub
 
-    Private Sub DataGridViewIG_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewIG.CellClick
+    Private Sub DataGridViewIG_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         Dim cell As DataGridViewCell = DataGridViewIG.CurrentCell
         If Not ((TypeOf cell Is DataGridViewButtonCell) And (DataGridViewIG.Columns(e.ColumnIndex).Name = "btnEliminar")) Then Return
         Try
@@ -375,7 +375,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
     End Sub
 
 
-    Private Sub ComboBoxOficina_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ComboBoxOficina.KeyPress
+    Private Sub ComboBoxOficina_KeyPress(sender As Object, e As KeyPressEventArgs)
 
         e.Handled = True  'este pequeño codigo se utiliza para deshabilitar la edicion del combobox
 
@@ -403,7 +403,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
     End Sub
 
     'codigo utilizado para llenar las cajas de texto con datos del comboboxoficinas
-    Private Sub ComboBoxOficina_SelectedValueChanged(sender As Object, e As EventArgs) Handles ComboBoxOficina.SelectedValueChanged
+    Private Sub ComboBoxOficina_SelectedValueChanged(sender As Object, e As EventArgs)
 
         Dim llamado As New connection
         llamado.AbrirConexion()
@@ -422,7 +422,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
 
     End Sub
 
-    Private Sub ButtonImp2_Click(sender As Object, e As EventArgs) Handles ButtonImp2.Click
+    Private Sub ButtonImp2_Click(sender As Object, e As EventArgs)
         Dim file As New OpenFileDialog()
         file.Filter = "Archivo JPG|*.jpg|PDF|*.pdf|PNG|*.png"
         If file.ShowDialog() = DialogResult.OK Then
@@ -435,7 +435,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
     '    mostrarIMG.ShowDialog()
     'End Sub
 
-    Private Sub DataGridViewCencepto2_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dataGridViewCencepto2.CellValueChanged
+    Private Sub DataGridViewCencepto2_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs)
         If dataGridViewCencepto2.Rows.Count > 0 Then
             Dim Total As Single
             Dim cont As Integer = 0 'PARA CONTADOR DE PARTIDAS
@@ -448,7 +448,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
 
     End Sub
 
-    Private Sub TextBoxCantid2_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCantid2.TextChanged
+    Private Sub TextBoxCantid2_TextChanged(sender As Object, e As EventArgs)
         'VALIDAR LA CANTIDAD DE FILAS A AGREGAR A LA HORA DE DIGITAR LA CANTIDAD DE ARTICULOS EN SISTEMAS
         If TextBoxCantid2.Text <> "" Then
             Dim cantidadADD As Integer = 0
@@ -467,7 +467,7 @@ VALUES (?serialMovilco, ?NoFactura,?articuloA, ?marcaArticuloA, ?serialArticuloA
         End If
     End Sub
 
-    Private Sub TextBoxCantid2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxCantid2.KeyPress
+    Private Sub TextBoxCantid2_KeyPress(sender As Object, e As KeyPressEventArgs)
         'metodo para evitar que se ingresen letras pero que se puedan borrar los numeros
         If Not IsNumeric(e.KeyChar) Then
             e.Handled = Not IsNumeric(e.KeyChar) And Not Char.IsControl(e.KeyChar)

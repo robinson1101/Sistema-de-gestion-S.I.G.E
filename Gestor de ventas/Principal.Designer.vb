@@ -23,25 +23,25 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.btn_Planes = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_Reposiciones = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_planE = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_kits = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_Proporcionados = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_Tv = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_triple = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_comisiones = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_ventas = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,55 +60,6 @@ Partial Class Principal
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "Barra de contenido"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator5
-        '
-        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator7
-        '
-        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator8
-        '
-        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 72)
-        '
-        'PanelContenedor
-        '
-        Me.PanelContenedor.AutoScroll = True
-        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelContenedor.Location = New System.Drawing.Point(0, 75)
-        Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(1184, 686)
-        Me.PanelContenedor.TabIndex = 1
-        '
         'btn_Planes
         '
         Me.btn_Planes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
@@ -119,6 +70,11 @@ Partial Class Principal
         Me.btn_Planes.Size = New System.Drawing.Size(54, 69)
         Me.btn_Planes.Text = "Planes"
         Me.btn_Planes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 72)
         '
         'btn_Reposiciones
         '
@@ -131,6 +87,11 @@ Partial Class Principal
         Me.btn_Reposiciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_Reposiciones.ToolTipText = "Reposiciones"
         '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 72)
+        '
         'btn_planE
         '
         Me.btn_planE.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
@@ -141,6 +102,11 @@ Partial Class Principal
         Me.btn_planE.Text = "Plan+Equipos"
         Me.btn_planE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_planE.ToolTipText = "Plan + Equipo"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 72)
         '
         'btn_kits
         '
@@ -153,6 +119,11 @@ Partial Class Principal
         Me.btn_kits.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_kits.ToolTipText = "Kit financiado"
         '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 72)
+        '
         'btn_Proporcionados
         '
         Me.btn_Proporcionados.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
@@ -163,6 +134,11 @@ Partial Class Principal
         Me.btn_Proporcionados.Text = "Prestamos"
         Me.btn_Proporcionados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_Proporcionados.ToolTipText = "Equipos proporcionados"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 72)
         '
         'btn_Tv
         '
@@ -177,6 +153,11 @@ Partial Class Principal
         Me.btn_Tv.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
         Me.btn_Tv.ToolTipText = "Television"
         '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 72)
+        '
         'btn_triple
         '
         Me.btn_triple.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
@@ -190,6 +171,11 @@ Partial Class Principal
         Me.btn_triple.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_triple.ToolTipText = "Triple play"
         '
+        'ToolStripSeparator7
+        '
+        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 72)
+        '
         'btn_comisiones
         '
         Me.btn_comisiones.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -201,6 +187,11 @@ Partial Class Principal
         Me.btn_comisiones.Text = "Comisiones"
         Me.btn_comisiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btn_comisiones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator8
+        '
+        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 72)
         '
         'btn_ventas
         '
@@ -222,6 +213,16 @@ Partial Class Principal
         Me.ToolStripButton1.Text = "Iventario"
         Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.AutoScroll = True
+        Me.PanelContenedor.BackColor = System.Drawing.Color.White
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelContenedor.Location = New System.Drawing.Point(0, 0)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(1184, 761)
+        Me.PanelContenedor.TabIndex = 1
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -229,9 +230,7 @@ Partial Class Principal
         Me.ClientSize = New System.Drawing.Size(1184, 761)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.PanelContenedor)
-        Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(1200, 800)
-        Me.MinimumSize = New System.Drawing.Size(1200, 800)
+        Me.MinimumSize = New System.Drawing.Size(900, 700)
         Me.Name = "Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GESTOR DE MOVIMIENTOS"
@@ -256,10 +255,10 @@ Partial Class Principal
     Friend WithEvents btn_triple As ToolStripButton
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
-    Friend WithEvents PanelContenedor As Panel
     Friend WithEvents btn_comisiones As ToolStripButton
     Friend WithEvents btn_ventas As ToolStripButton
     Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator8 As ToolStripSeparator
     Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents PanelContenedor As Panel
 End Class
