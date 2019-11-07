@@ -35,13 +35,14 @@ Partial Class Principal
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_Tv = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.btn_triple = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
+        Me.btn_Clientes = New System.Windows.Forms.ToolStripButton()
         Me.btn_comisiones = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_ventas = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +52,7 @@ Partial Class Principal
         Me.ToolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(50, 50)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_Planes, Me.ToolStripSeparator1, Me.btn_Reposiciones, Me.ToolStripSeparator2, Me.btn_planE, Me.ToolStripSeparator4, Me.btn_kits, Me.ToolStripSeparator5, Me.btn_Proporcionados, Me.ToolStripSeparator3, Me.btn_Tv, Me.ToolStripSeparator6, Me.btn_triple, Me.ToolStripSeparator7, Me.btn_comisiones, Me.ToolStripSeparator8, Me.btn_ventas, Me.ToolStripButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_Planes, Me.ToolStripSeparator1, Me.btn_Reposiciones, Me.ToolStripSeparator2, Me.btn_planE, Me.ToolStripSeparator4, Me.btn_kits, Me.ToolStripSeparator5, Me.btn_Proporcionados, Me.ToolStripSeparator3, Me.btn_Tv, Me.ToolStripSeparator6, Me.btn_comisiones, Me.ToolStripSeparator8, Me.btn_ventas, Me.ToolStripSeparator9, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.btn_Clientes})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
@@ -158,23 +159,18 @@ Partial Class Principal
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
         Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 72)
         '
-        'btn_triple
+        'btn_Clientes
         '
-        Me.btn_triple.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.btn_triple.Image = Global.Gestor_de_ventas.My.Resources.Resources.Sin_título2
-        Me.btn_triple.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_triple.Name = "btn_triple"
-        Me.btn_triple.Size = New System.Drawing.Size(66, 69)
-        Me.btn_triple.Text = "Triple Play"
-        Me.btn_triple.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btn_triple.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.btn_triple.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btn_triple.ToolTipText = "Triple play"
-        '
-        'ToolStripSeparator7
-        '
-        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 72)
+        Me.btn_Clientes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_Clientes.Image = Global.Gestor_de_ventas.My.Resources.Resources.icons8_líder_50
+        Me.btn_Clientes.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btn_Clientes.Name = "btn_Clientes"
+        Me.btn_Clientes.Size = New System.Drawing.Size(54, 69)
+        Me.btn_Clientes.Text = "Clientes"
+        Me.btn_Clientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btn_Clientes.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.btn_Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_Clientes.ToolTipText = "Triple play"
         '
         'btn_comisiones
         '
@@ -223,6 +219,16 @@ Partial Class Principal
         Me.PanelContenedor.Size = New System.Drawing.Size(1184, 761)
         Me.PanelContenedor.TabIndex = 1
         '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 72)
+        '
+        'ToolStripSeparator10
+        '
+        Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 72)
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -252,13 +258,14 @@ Partial Class Principal
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
     Friend WithEvents btn_Proporcionados As ToolStripButton
     Friend WithEvents btn_Tv As ToolStripButton
-    Friend WithEvents btn_triple As ToolStripButton
+    Friend WithEvents btn_Clientes As ToolStripButton
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents btn_comisiones As ToolStripButton
     Friend WithEvents btn_ventas As ToolStripButton
-    Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator8 As ToolStripSeparator
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
 End Class

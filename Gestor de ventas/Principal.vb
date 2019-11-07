@@ -71,7 +71,7 @@ Public Class Principal
         AbrirFormEnPanel(Of Television)()
     End Sub
 
-    Private Sub btn_triple_Click(sender As Object, e As EventArgs) Handles btn_triple.Click
+    Private Sub btn_triple_Click(sender As Object, e As EventArgs) Handles btn_Clientes.Click
         'llamado al formulario Triple play
         AbrirFormEnPanel(Of Triple_play)()
     End Sub

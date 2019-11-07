@@ -294,5 +294,8 @@
   <ItemGroup>
     <None Include="Resources\bloc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-líder-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
