@@ -71,11 +71,6 @@ Public Class Principal
         AbrirFormEnPanel(Of Television)()
     End Sub
 
-    Private Sub btn_triple_Click(sender As Object, e As EventArgs) Handles btn_Clientes.Click
-        'llamado al formulario Triple play
-        AbrirFormEnPanel(Of Triple_play)()
-    End Sub
-
     Private Sub btn_comisiones_Click(sender As Object, e As EventArgs) Handles btn_comisiones.Click
         'llamado al formulario Comisiones
         AbrirFormEnPanel(Of Comisiones)()
@@ -89,5 +84,9 @@ Public Class Principal
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         'llamado al formulario Inventario general
         AbrirFormEnPanel(Of InventarioGeneral)()
+    End Sub
+
+    Private Sub btn_Clientes_Click(sender As Object, e As EventArgs) Handles btn_Clientes.Click
+        Clientes.ShowDialog()
     End Sub
 End Class

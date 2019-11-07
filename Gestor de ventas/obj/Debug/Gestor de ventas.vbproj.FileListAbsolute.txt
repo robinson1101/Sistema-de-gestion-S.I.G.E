@@ -49,7 +49,6 @@ C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\o
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Proporcionados.resources
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Reposiciones.resources
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Television.resources
-C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Triple_play.resources
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Ventas.resources
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor de ventas.vbproj.GenerateResource.cache
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor de ventas.vbproj.CopyComplete
@@ -57,3 +56,4 @@ C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\o
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor de ventas.xml
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor de ventas.pdb
 C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Login.resources
+C:\Users\ROBINSON\Documents\GitHub\Sistema-de-gestion-S.I.G.E\Gestor de ventas\obj\Debug\Gestor_de_ventas.Clientes.resources

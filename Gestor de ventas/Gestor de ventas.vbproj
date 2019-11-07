@@ -170,10 +170,10 @@
     <Compile Include="Television.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Triple play.Designer.vb">
-      <DependentUpon>Triple play.vb</DependentUpon>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Triple play.vb">
+    <Compile Include="Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventas.Designer.vb">
@@ -220,8 +220,8 @@
     <EmbeddedResource Include="Television.resx">
       <DependentUpon>Television.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Triple play.resx">
-      <DependentUpon>Triple play.vb</DependentUpon>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>

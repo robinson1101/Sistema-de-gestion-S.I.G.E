@@ -35,14 +35,14 @@ Partial Class Principal
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_Tv = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.btn_Clientes = New System.Windows.Forms.ToolStripButton()
         Me.btn_comisiones = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_ventas = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
+        Me.btn_Clientes = New System.Windows.Forms.ToolStripButton()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -159,19 +159,6 @@ Partial Class Principal
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
         Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 72)
         '
-        'btn_Clientes
-        '
-        Me.btn_Clientes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.btn_Clientes.Image = Global.Gestor_de_ventas.My.Resources.Resources.icons8_líder_50
-        Me.btn_Clientes.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_Clientes.Name = "btn_Clientes"
-        Me.btn_Clientes.Size = New System.Drawing.Size(54, 69)
-        Me.btn_Clientes.Text = "Clientes"
-        Me.btn_Clientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btn_Clientes.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.btn_Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btn_Clientes.ToolTipText = "Triple play"
-        '
         'btn_comisiones
         '
         Me.btn_comisiones.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -199,6 +186,11 @@ Partial Class Principal
         Me.btn_ventas.Text = "Ventas del dia"
         Me.btn_ventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 72)
+        '
         'ToolStripButton1
         '
         Me.ToolStripButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -209,6 +201,24 @@ Partial Class Principal
         Me.ToolStripButton1.Text = "Iventario"
         Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator10
+        '
+        Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 72)
+        '
+        'btn_Clientes
+        '
+        Me.btn_Clientes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_Clientes.Image = Global.Gestor_de_ventas.My.Resources.Resources.icons8_líder_50
+        Me.btn_Clientes.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btn_Clientes.Name = "btn_Clientes"
+        Me.btn_Clientes.Size = New System.Drawing.Size(54, 69)
+        Me.btn_Clientes.Text = "Clientes"
+        Me.btn_Clientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btn_Clientes.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.btn_Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_Clientes.ToolTipText = "Triple play"
+        '
         'PanelContenedor
         '
         Me.PanelContenedor.AutoScroll = True
@@ -218,16 +228,6 @@ Partial Class Principal
         Me.PanelContenedor.Name = "PanelContenedor"
         Me.PanelContenedor.Size = New System.Drawing.Size(1184, 761)
         Me.PanelContenedor.TabIndex = 1
-        '
-        'ToolStripSeparator9
-        '
-        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 72)
-        '
-        'ToolStripSeparator10
-        '
-        Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 72)
         '
         'Principal
         '

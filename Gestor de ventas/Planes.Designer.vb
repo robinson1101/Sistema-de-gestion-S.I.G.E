@@ -23,6 +23,7 @@ Partial Class Planes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelPlanes = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'Panel1
@@ -34,13 +35,23 @@ Partial Class Planes
         Me.Panel1.Size = New System.Drawing.Size(1093, 10)
         Me.Panel1.TabIndex = 1
         '
+        'PanelPlanes
+        '
+        Me.PanelPlanes.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PanelPlanes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelPlanes.Location = New System.Drawing.Point(0, 0)
+        Me.PanelPlanes.Name = "PanelPlanes"
+        Me.PanelPlanes.Size = New System.Drawing.Size(1093, 796)
+        Me.PanelPlanes.TabIndex = 2
+        '
         'Planes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1093, 806)
+        Me.Controls.Add(Me.PanelPlanes)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Planes"
         Me.Text = "Planes"
@@ -48,4 +59,5 @@ Partial Class Planes
 
     End Sub
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelPlanes As Panel
 End Class
